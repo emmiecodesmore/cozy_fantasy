@@ -1,0 +1,41 @@
+:root {
+  --color-cream: #F5EDE1;
+  --color-amber: #D68C45;
+  --color-forest: #3C5A44;
+  --color-plum: #7A5C6E;
+  --color-brown: #3A2E28;
+   --color-bg-dark: #2A2521;
+  --color-gold: #E3A73E;
+  --color-rust: #D97442;
+  --color-pink: #E5A8BC;
+  --color-purple: #B29BCF;
+  --color-green: #607846;
+
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-brown);
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+.content-width {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.content-width-wide {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.stat-highlight { color: var(--color-rust); font-weight: 700; }
