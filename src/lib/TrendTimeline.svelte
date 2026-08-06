@@ -24,7 +24,8 @@
     return { genre, values: series.map(d => ({ year: d.year, value: (d.interest / base) * 100 })) };
   });
 
-  const hasCrossGenreData = otherGenres.some(g => g.values.length > 0);
+  //const hasCrossGenreData = otherGenres.some(g => g.values.length > 0);
+  const hasCrossGenreData = false; //switch back on if I switch to google trends data later
 
   const width = 700, height = 400;
   const margin = { top: 40, right: 30, bottom: 40, left: 60 };
@@ -117,7 +118,7 @@
             </div>
         {/if}
 
-      {#if genreProgress > 0.3}
+      {#if genreProgress > 0.3 && hasCrossGenreData}
         <div class="legend" style="opacity: {genreProgress}">
           <span><i style="background: var(--color-green)"></i> Cozy fantasy</span>
           {#each genres as genre, i}
@@ -125,7 +126,7 @@
           {/each}
         </div>
       {/if}
-      <p>You can see the sharp increase in cozy fantasy titles in recent years, along with a couple of pivotal moments highlighted. </p>
+      <p>You can see the sharp increase in cozy fantasy titles in recent years, along with a notable increase during the Covid years. </p>
       <p>Next, we'll look at an important discussion within the world of Cozy Fantasy: the self-published vs. traditional publishing path. <em>Legends & Lattes</em> was originally self-published by Travis Baldree, and only later was picked up by a traditional publisher, and that trend isn't unique. You can see in the following chart that this was a situation where self-published cozy fantasy novels led the surge, but traditionally published books in the genre were quick to follow.</p>  
     </section>
   </div>

@@ -22,7 +22,7 @@ const pullouts = [
 
 <section class="covers content-width" style="position: relative;">
     <h2>A Selection of Cozy Fantasy Book Covers</h2>
-    <p class="intro">Below is a selection of covers drawn from the 100-book Cozy Fantasy dataset I built for this project, pulled from the most-referenced titles across Goodreads, listicles, Amazon Books, and r/cozyfantasy.</p>
+    <p class="intro">Below is a selection of covers drawn from the 100-book Cozy Fantasy dataset I built for this project, pulled from the most-referenced titles across Goodreads, listicles, Amazon Books, and r/cozyfantasy. See if you can spot any common motifs or visual themes across these covers, then scroll down to see a few examples.</p>
     <Decoration src={cottageImg} top="10%" left="95%" size="200px" opacity={0.85} rotate="-1deg" />
     <img src={collageImg} alt="Grid of cozy fantasy book covers" class="collage" />
 </section>
